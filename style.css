@@ -9,17 +9,13 @@
 
 main{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: wrap;
     align-items: center;
     width: 100%;
     min-height: 100vh;
 }
 
 .container-home {
-
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     background-color: #39289F;
     color: white
@@ -29,28 +25,41 @@ main{
     flex: 1;
 }
 
-.container-form{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: white;
-    background: linear-gradient(#2211E7, #383837);
-}
 
 /* HEADER */
 
 header {
-    padding: 10vh;
+    padding: 2.5rem 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#contact-button{
-
+#logo{
+    width: 25vw;
+    font-size: 29px;
+    font-weight: bolder;
 }
+
+#menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4.5rem;
+}
+
+#menu a{
+    color: white;
+}
+
+#contact-button{
+    background-color: #FA9021;
+    color: white;
+    border-radius: 9px;
+    padding: 1rem 2.5rem;
+    font-size: 13px;
+}
+
 
 #joystick{
     position: absolute;
@@ -69,6 +78,7 @@ nav a{
 
 #box1{
     display: flex;
+    flex-flow: wrap;
 }
 
 #box1 img{
@@ -97,22 +107,98 @@ nav a{
 
 /* FORM - MAIN */
 
+.container-form{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(#2211E7, #383837);
+}
+
 #fbox1{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 10rem;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+#linking{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#contact-color{
+    color: #E47500;
+}
+
+#lorem{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#lorem h1{
+    font-size: 33px;
+}
+
+#map{
+    padding: 5rem 0 2.5rem;
+}
+
+#info-fbox1{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#info-fbox1 hr{
+    color: #FFFFFF;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    gap: 1rem;
+}
+
+#follow{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    gap: 1rem;
 }
 
 #fbox2{
     background: #1C140F;
     width: 100%;
     height: 100%;
-    padding: 3.5rem 10rem;
+    padding: 0rem 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#fbox2 h1{
+#line1{
+    position: absolute;
+    margin-left: 30rem;
+}
+
+#line2{
+    position: absolute;
+    margin-top: 37.5rem;
+    margin-right: 60.5rem;
+}
+
+.title{
+    padding-top: 4rem;
     font-size: 30px;
 }
 
@@ -126,6 +212,7 @@ form{
     border: 0;
     flex-grow: 1;
     margin-top: 5%;
+    margin-bottom: 5%;
     gap: 1.5rem;
 }
 
@@ -171,7 +258,9 @@ form textarea{
     padding: 0.5rem;
     width: 100%;
     min-width: 48.5rem;
-    min-height: 10rem;
+    max-width: 48.5rem;;
+    min-height: 15rem;
+    max-height: 15rem;
 }
 
 #register{
@@ -182,6 +271,52 @@ form textarea{
     padding: 1rem 2rem;
     margin: 2% 0;
     margin-left: auto;
+}
+
+#fbox3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 7.5rem 10rem 5rem;
+}
+
+#info-fbox3{
+    max-width: 35vw;
+}
+
+.loop{
+    background-color: #1C140F;
+    border-radius: 15px;
+    margin-top: 5rem;
+    padding: 3rem;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+#stay{
+    width: 32.5vw;
+}
+
+#continue{
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#continue input{
+    padding-left: 1rem;
+    border: 0;
+}
+
+#button-continue{
+    background-color: #DC7000;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
 }
 
 /* FOOTER */
@@ -200,14 +335,6 @@ footer{
     align-items: center;
     flex-grow: 1;
     box-sizing: border-box;
-}
-
-#logo{
-    width: 25vw;
-}
-
-#logo h3{
-    font-size: 24px;
 }
 
 #contact{
@@ -233,6 +360,8 @@ ul{
     font-size: 13px;
     padding: 1.5rem;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .foot-box{
