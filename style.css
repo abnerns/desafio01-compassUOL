@@ -2,12 +2,22 @@
 
 *{
     box-sizing: border-box;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .container-home {
-    margin: 0;
-    padding: 0;
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,8 +35,8 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #39289F;
-    color: white
+    color: white;
+    background: linear-gradient(#2211E7, #383837);
 }
 
 /* HEADER */
@@ -36,10 +46,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav {
-    
 }
 
 #contact-button{
@@ -55,11 +61,6 @@ nav {
 }
 
 /* INDEX - MAIN */
-
-main{
-    flex: 1;
-    padding: 25vh;
-}
 
 nav a{
     padding: 10px;
@@ -88,14 +89,100 @@ nav a{
     justify-content: space-between;
 }
 
-#fundo{
+.fundo{
     z-index: -1000;
-    position: absolute;
     height: 100%;
     width: 100%;
 }
 
-/* FORMS - MAIN */
+/* FORM - MAIN */
+
+#fbox1{
+    width: 100%;
+    height: 100%;
+}
+
+#fbox2{
+    background: #1C140F;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fbox2 h1{
+    font-size: 30px;
+}
+
+form{
+    display: flex;
+    max-width: 50rem;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1%;
+    justify-content: space-between;
+    border: 0;
+    flex-grow: 1;
+    margin-top: 5%;
+    gap: 1.5rem;
+}
+
+form label{
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+
+form input{
+    display: block;
+    color: white;
+    background: #4F4F4F;
+    border-color: #CECECE;
+    border-radius: 9px;
+    padding: 1rem;
+}
+
+.username{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    flex-wrap: wrap;
+}
+
+.username input{
+    min-width: 23rem;
+}
+
+.email input{
+    min-width: 48.5rem;
+    flex-wrap: wrap;
+}
+
+form textarea{
+    display: block;
+    color: white;
+    background: #4F4F4F;
+    border-color: #CECECE;
+    border: 0.6%;
+    border-radius: 9px;
+    padding: 0.5rem;
+    width: 100%;
+    min-width: 48.5rem;
+    min-height: 10rem;
+}
+
+#register{
+    color: white;
+    background-color: #DC7000;
+    border-radius: 10px;
+    border: 0;
+    padding: 1rem 2rem;
+    margin: 2% 0;
+    margin-left: auto;
+}
 
 /* FOOTER */
 footer{
@@ -107,7 +194,7 @@ footer{
 .foot-box{
     height: 20.5rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: wrap;
     padding: 3rem;
     justify-content: space-between;
     align-items: center;
