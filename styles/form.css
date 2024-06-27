@@ -7,52 +7,33 @@
     padding: 0;
 }
 
-main{
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-}
 
-.container-home {
-    min-height: 100vh;
-    background-color: #39289F;
-    color: white
-}
-
-.container-home main{
-    flex: 1;
-}
-
-
-/* HEADER */
-
-header {
+/* ====== HEADER ====== */
+header{
     padding: 2.5rem 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#logo{
+.logo{
     width: 25vw;
     font-size: 29px;
     font-weight: bolder;
 }
 
-#menu{
+.menu{
     width: 100%;
     display: flex;
     justify-content: flex-end;
     gap: 4.5rem;
 }
 
-#menu a{
+.menu a{
     color: white;
 }
 
-#contact-button{
+.contact-button{
     background-color: #FA9021;
     color: white;
     border-radius: 9px;
@@ -60,52 +41,19 @@ header {
     font-size: 13px;
 }
 
-
-#joystick{
-    position: absolute;
-    width: 806px;
-    height: 761px;
-    left: 772px;
-    top: 0px;
-}
-
-/* INDEX - MAIN */
-
 nav a{
     padding: 10px;
     text-decoration: none;
 }
 
-#box1{
+/* ====== MAIN ====== */
+main{
     display: flex;
     flex-flow: wrap;
-}
-
-#box1 img{
-    z-index: -1000;
-}
-
-#box2{
-    display: flex;
-    justify-content: space-between;
-}
-
-#box2 figure{
-    display: inline-block;
-}
-
-#top-box2{
-    display: flex;
-    justify-content: space-between;
-}
-
-.fundo{
-    z-index: -1000;
-    height: 100%;
+    align-items: center;
     width: 100%;
+    min-height: 100vh;
 }
-
-/* FORM - MAIN */
 
 .container-form{
     margin: 0;
@@ -115,6 +63,7 @@ nav a{
     background: linear-gradient(#2211E7, #383837);
 }
 
+/* BOX 1 */
 #fbox1{
     width: 100%;
     height: 100%;
@@ -176,6 +125,7 @@ nav a{
     gap: 1rem;
 }
 
+/* BOX 2 */
 #fbox2{
     background: #1C140F;
     width: 100%;
@@ -273,6 +223,7 @@ form textarea{
     margin-left: auto;
 }
 
+/* BOX 3 */
 #fbox3{
     width: 100%;
     height: 100%;
@@ -319,7 +270,7 @@ form textarea{
     border-radius: 8px;
 }
 
-/* FOOTER */
+/* ====== FOOTER ====== */
 footer{
     background-color: #070707;
     color: white;
@@ -337,7 +288,7 @@ footer{
     box-sizing: border-box;
 }
 
-#contact{
+.contact{
     width: 19vw;
 }
 
@@ -346,7 +297,7 @@ ul{
     padding: 0;
 }
 
-#social{
+.social{
     display: flex;
     flex-flow: wrap;
     width: 250px;
@@ -354,17 +305,9 @@ ul{
     padding-top: 12rem;
 }
 
-#copyright{
+.copyright{
     display: flex;
     justify-content: center;
     font-size: 13px;
     padding: 1.5rem;
-}
-
-
-
-@media screen and (max-width: 768px) {
-    .foot-box{
-        display: inline-block;
-    }
 }

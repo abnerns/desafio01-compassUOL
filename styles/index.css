@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ====== HEADER ====== */
+header{
+    padding: 2.5rem 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 25vw;
+    font-size: 29px;
+    font-weight: bolder;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4.5rem;
+}
+
+.menu a{
+    color: white;
+}
+
+.contact-button{
+    background-color: #FA9021;
+    color: white;
+    border-radius: 9px;
+    padding: 1rem 2.5rem;
+    font-size: 13px;
+}
+
+nav a{
+    padding: 10px;
+    text-decoration: none;
+}
+/*
+#joystick{
+    position: absolute;
+    width: 806px;
+    height: 761px;
+    left: 772px;
+    top: 0px;
+}
+
+/* ====== MAIN ====== */
+main{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container-home {
+    min-height: 100vh;
+    background-color: #39289F;
+    color: white
+}
+
+.container-home main{
+    flex: 1;
+}
+
+#box1{
+    display: flex;
+    flex-flow: wrap;
+}
+
+#box1 img{
+    z-index: -1000;
+}
+
+#box2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#box2 figure{
+    display: inline-block;
+}
+
+#top-box2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fundo{
+    z-index: -1000;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* ====== FOOTER ====== */
+footer{
+    background-color: #070707;
+    color: white;
+    width: 100%;
+}
+
+.foot-box{
+    height: 20.5rem;
+    display: flex;
+    flex-flow: wrap;
+    padding: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.contact{
+    width: 19vw;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.social{
+    display: flex;
+    flex-flow: wrap;
+    width: 250px;
+    height: 100px;
+    padding-top: 12rem;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    padding: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .foot-box{
+        display: inline-block;
+    }
+}
