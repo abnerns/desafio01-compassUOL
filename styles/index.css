@@ -592,13 +592,14 @@ ul{
 
     #continue{
         margin-top: 2.5rem;
+        display: flex;
     }
 
     footer{
         width: 100%;
         display: flex;
         flex-flow: column wrap;
-        height: 100vh;
+        height: 90vh;
         align-items: center;
     }
 
