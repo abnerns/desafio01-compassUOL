@@ -399,6 +399,19 @@ ul{
     padding: 1.5rem;
 }
 
+/* ERROR - Page */
+#container-error{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#error{
+    width: 80%;
+    height: 80vh;
+}
+
 
 @media screen and (max-width: 768px) {
     .foot-box{
