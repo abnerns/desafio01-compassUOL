@@ -401,3 +401,83 @@ ul{
     font-size: 13px;
     padding: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        height: 60vh;
+        padding: 2rem 2.5rem;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #fbox1{
+        padding: 5rem 2.5rem;
+    }
+
+    #map img{
+        width: 100%;
+    }
+
+    .info{
+        display: flex;
+        flex-flow: column;
+    }
+
+    #fbox2{
+        padding: 5rem 2.5rem;
+    }
+
+    .email input{
+        min-width: 25rem;
+    }
+
+    form textarea{
+        min-width: 25rem;
+    }
+
+    #fbox3{
+        padding: 4rem 2.5rem;
+        width: 100%;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .loop{
+        justify-content: center;
+    }
+
+    #continue{
+        margin-top: 2.5rem;
+        display: flex;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        height: 80vh;
+        align-items: center;
+    }
+
+    .foot-box{
+        margin-top: 5rem;
+        padding: 1.5rem;
+        display: flex;
+    }
+
+    .social{
+        padding: 0;
+    }
+
+    .copyright{
+        margin-top: 4.5rem;
+    }
+
+    #line1, #line2{
+        display: none;
+    }
+}
