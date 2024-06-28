@@ -50,7 +50,6 @@ nav a{
 main{
     display: flex;
     flex-flow: wrap;
-    align-items: center;
     width: 100%;
     min-height: 100vh;
 }
@@ -229,11 +228,12 @@ form textarea{
     height: 100%;
     display: flex;
     flex-flow: column wrap;
-    padding: 7.5rem 10rem 5rem;
+    padding: 6.5rem 10rem 5rem;
 }
 
 #info-fbox3{
     max-width: 35vw;
+    line-height: 2.5rem;
 }
 
 .loop{
