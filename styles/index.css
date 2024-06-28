@@ -34,12 +34,21 @@ header{
     color: white;
 }
 
+.menu a:hover{
+    scale: 1.2;
+    transition: .5s;
+}
+
 .contact-button{
     background-color: #FA9021;
     color: white;
     border-radius: 9px;
     padding: 1rem 2.5rem;
     font-size: 13px;
+}
+
+.contact-button:hover{
+    background-color: #c4721b;
 }
 
 nav a{
@@ -71,8 +80,8 @@ main{
 
 /* BOX 1 */
 #box1{
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
 }
 
@@ -80,7 +89,7 @@ main{
     width: 50vw;
     display: flex;
     flex-flow: column wrap;
-    padding: 3.5rem 10rem;
+    padding: 3.5rem 8rem 0 10rem;
     justify-content: left;
     gap: 3rem;
     min-height: 100vh;
@@ -104,19 +113,25 @@ main{
     border: 0;
     padding: 1rem;
     width: 12.5vw;
+    cursor: pointer;
+}
+
+#details:hover{
+    background-color: #c4721b;
+    scale: 1.2;
+    transition: .5s;
 }
 
 #joystick{
     position: absolute;
-    margin-left: 51rem;
+    margin-left: 3rem;
     top: 0rem;
     z-index: -1;
 }
 
 #engines{
     position: absolute;
-    margin-left: 42.5rem;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
 }
 
 /* BOX 2 */
@@ -125,7 +140,7 @@ main{
     height: 100%;
     display: flex;
     flex-flow: wrap;
-    padding: 3.5rem 10rem;
+    padding: 0 10rem;
     gap: 3rem;
 }
 
@@ -146,6 +161,13 @@ main{
     border-radius: 10px;
     font-size: 20px;
     font-family: 'Rubik';
+    cursor: pointer;
+}
+
+.see:hover{
+    background-color: #281888;
+    scale: 1.2;
+    transition: .5s;
 }
 
 #box2 figure{
@@ -154,6 +176,15 @@ main{
     justify-content: space-between;
     text-align: center;
     font-size: 22px;
+}
+
+#box2 img{
+    cursor: pointer;
+}
+
+#box2 img:hover{
+    scale: 1.2;
+    transition: .5s;
 }
 
 .trend-fire{
@@ -211,6 +242,15 @@ figcaption{
     z-index: -1;
 }
 
+#box3 img{
+    cursor: pointer;
+}
+
+#box3 img:hover{
+    scale: 1.10;
+    transition: .9s;
+}
+
 /* BOX 4 */
 #background{
     background-image: url("/imgs/fundo-box4.png");
@@ -251,6 +291,15 @@ figcaption{
     line-height: 3rem;
 }
 
+#box4 img:hover{
+    scale: 1.2;
+    transition: .5s;
+}
+
+.seta{
+    cursor: pointer;
+}
+
 /* BOX 5 */
 #box5{
     width: 100%;
@@ -276,6 +325,11 @@ figcaption{
     justify-content: space-evenly;
     gap: 2.5rem 0;
     padding-bottom: 3rem;
+}
+
+#box5 img:hover{
+    scale: 1.05;
+    transition: .8s;
 }
 
 /* BOX 6 */
@@ -327,7 +381,16 @@ figcaption{
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 8px;
+    border: none;
+    cursor: pointer;
 }
+
+#button-continue:hover{
+    background-color: #ad6517;
+    scale: 1.1;
+    transition: .5s;
+}
+
 
 /* ====== FOOTER ====== */
 footer{
@@ -380,8 +443,18 @@ ul{
     width: 19vw;
 }
 
+.contact a:hover{
+    scale: 1.2;
+    transition: .5s;
+}
+
 .about{
     width: 8vw;
+}
+
+.about a:hover{
+    scale: 1.2;
+    transition: .5s;
 }
 
 .social{
@@ -390,6 +463,15 @@ ul{
     width: 250px;
     height: 100px;
     padding-top: 12rem;
+}
+
+.social a{
+    cursor: pointer;
+}
+
+.social a:hover{
+    scale: 1.2;
+    transition: .5s;
 }
 
 .copyright{
