@@ -8,7 +8,6 @@
     padding: 0;
 }
 
-
 /* ====== HEADER ====== */
 header{
     padding: 2.5rem 3.5rem;
@@ -397,16 +396,17 @@ footer{
     background-color: #070707;
     color: white;
     width: 100%;
+    height: 60vh;
 }
 
 .foot-box{
-    height: 18.5rem;
     display: flex;
     flex-flow: wrap;
     padding: 2rem 5rem;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    bottom: 0;
 }
 
 .foot-box a{
@@ -491,12 +491,132 @@ ul{
 
 #error{
     width: 80%;
-    height: 80vh;
+    height: 100vh;
 }
 
 
 @media screen and (max-width: 768px) {
-    .foot-box{
-        display: inline-block;
+    header{
+        flex-direction: column;
+        height: 60vh;
+        padding: 2rem 2.5rem;
     }
+
+    .menu{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #box1{
+        padding: 2.5rem 0;
+    }
+
+    #text-box1 {
+        width: 100%;
+        padding: 2rem 2.5rem 0 2.5rem;
+    }
+
+    #details{
+        width: 30vw;
+    }
+
+    #box2{
+        padding: 2.5rem;
+    }
+
+    #top-box2{
+        font-size: 25px;
+    }
+
+    #box2 figure{
+        flex-direction: column;
+    }
+
+    #box3{
+        flex-direction: column;
+        text-align: center;
+        padding: 5rem 2.5rem;
+    }
+
+    #left-box3{
+        width: 100%;
+    }
+
+    #info-box3{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    #lor{
+        width: 100%;
+    }
+
+    #box3 img{
+        width: 100%;
+    }
+
+    #box4 {
+        padding: 2rem 2.5rem;
+    }
+
+    #top-box4 {
+        width: 80vw;
+        font-size: 25px;
+    }
+
+    #box5 {
+        flex-flow: column;
+        padding: 4rem 2.5rem;
+    }
+
+    #box5 img{
+        width: 100%;
+    }
+
+    #top-box5 {
+        width: 80%;
+        font-size: 25px;
+    }
+
+    #box6{
+        padding: 4rem 2.5rem;
+        width: 100%;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .loop{
+        justify-content: center;
+    }
+
+    #continue{
+        margin-top: 2.5rem;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .foot-box{
+        padding: 1.5rem;
+        display: flex;
+    }
+
+    .social{
+        padding: 0;
+    }
+
+    .copyright{
+        margin-top: 7.5rem;
+    }
+
+    #joystick, #engines, #point{
+        display: none;
+    }
+
 }
