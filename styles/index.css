@@ -337,23 +337,51 @@ footer{
 }
 
 .foot-box{
-    height: 20.5rem;
+    height: 18.5rem;
     display: flex;
     flex-flow: wrap;
-    padding: 3rem;
+    padding: 2rem 5rem;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
     box-sizing: border-box;
+}
+
+.foot-box a{
+    text-decoration: none;
+    color: white;
+}
+
+.foot-box li{
+    margin-top: 0.25rem;
+}
+
+.foot-title{
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.foot-box div{
+    height: 80%;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-evenly;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.foot-logo{
+    width: 20vw;
 }
 
 .contact{
     width: 19vw;
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
+.about{
+    width: 8vw;
 }
 
 .social{
@@ -370,7 +398,6 @@ ul{
     font-size: 13px;
     padding: 1.5rem;
 }
-
 
 
 @media screen and (max-width: 768px) {
