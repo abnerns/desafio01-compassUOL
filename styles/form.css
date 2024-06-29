@@ -174,7 +174,7 @@ main{
     font-size: 30px;
 }
 
-form{
+#formulario{
     display: flex;
     max-width: 50rem;
     width: 100%;
@@ -188,13 +188,13 @@ form{
     gap: 1.5rem;
 }
 
-form label{
+#formulario label{
     margin-bottom: 0.5rem;
     font-size: 14px;
     color: #4F4F4F;
 }
 
-form input{
+#formulario input{
     display: block;
     color: white;
     background: #4F4F4F;
@@ -220,7 +220,7 @@ form input{
     flex-wrap: wrap;
 }
 
-form textarea{
+#formulario textarea{
     display: block;
     color: white;
     background: #4F4F4F;
@@ -263,7 +263,6 @@ form textarea{
 
 #info-fbox3{
     max-width: 35vw;
-    line-height: 2.5rem;
 }
 
 .loop{
@@ -435,7 +434,7 @@ ul{
         min-width: 25rem;
     }
 
-    form textarea{
+    #formulario textarea{
         min-width: 25rem;
     }
 

@@ -113,6 +113,8 @@ main{
     padding: 1rem;
     width: 12.5vw;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 #details:hover{
@@ -161,6 +163,8 @@ main{
     font-size: 20px;
     font-family: 'Rubik';
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 .see:hover{
@@ -396,7 +400,6 @@ footer{
     background-color: #070707;
     color: white;
     width: 100%;
-    height: 60vh;
 }
 
 .foot-box{
@@ -406,7 +409,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    bottom: 0;
+    height: 18.5rem;
 }
 
 .foot-box a{
@@ -604,6 +607,7 @@ ul{
     }
 
     .foot-box{
+        margin-top: 5rem;
         padding: 1.5rem;
         display: flex;
     }
