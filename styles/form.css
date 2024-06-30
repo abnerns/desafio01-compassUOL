@@ -194,7 +194,7 @@ main{
     color: #4F4F4F;
 }
 
-#formulario input{
+.username input, .email input{
     display: block;
     color: white;
     background: #4F4F4F;

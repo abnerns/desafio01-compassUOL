@@ -56,23 +56,23 @@
             <form id="formulario">
                 <fieldset class="username">
                     <div>
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" required="">
+                        <label for="firstName" id="labelFName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
                     </div>
                     <div>
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" required="">
+                        <label for="lastName" id="labelLName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
                     </div>
                 </fieldset>
                 <div class="email">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required="">
+                    <label for="email" id="labelEmail">Email Address</label>
+                    <input type="email" id="email" name="email" required oninput="emailValidate()">
                 </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"></textarea>
+                <div class="message">
+                    <label for="message" id="labelMessage">Message</label>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
-                <button id="register">Get in touch</button>
+                <button type="submit" id="register">Get in touch</button>
             </form>
             <img id="line2" src="/imgs/line2.png">
         </section>
@@ -126,6 +126,6 @@
             <p>Copyright ® 2022 prodesigner All rights Reserved</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
