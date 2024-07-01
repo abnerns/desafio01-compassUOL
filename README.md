@@ -9,7 +9,7 @@
 
 ## Screenshots
 
-![Home](index-screenshot.png)
+![Home](/imgs/index-screenshot.png)
 
 
 ## Aprendizados
