@@ -38,28 +38,28 @@
             </div>
             <figure>
                 <div>
-                    <img src="imgs/trend-1.png">
+                    <a href="/pages/error.html"><img src="imgs/trend-1.png"></a>
                     <div class="trend-fire">
                         <img src="/imgs/icon-fire.png">
                         <figcaption>40 Followers</figcaption>
                     </div>
                 </div>
                 <div>
-                    <img src="imgs/trend-2.png">
+                    <a href="/pages/error.html"><img src="imgs/trend-2.png"></a>
                     <div class="trend-fire">
                         <img src="/imgs/icon-fire.png">
                         <figcaption>40 Followers</figcaption>
                     </div>
                 </div>
                 <div>
-                    <img src="imgs/trend-3.png">
+                    <a href="/pages/error.html"><img src="imgs/trend-3.png"></a>
                     <div class="trend-fire">
                         <img src="/imgs/icon-fire.png">
                         <figcaption>40 Followers</figcaption>
                     </div>
                 </div>
                 <div>
-                    <img src="imgs/trend-4.png">
+                    <a href="/pages/error.html"><img src="imgs/trend-4.png"></a>
                     <div class="trend-fire">
                         <img src="/imgs/icon-fire.png">
                         <figcaption>40 Followers</figcaption>
@@ -88,32 +88,32 @@
                     <div class="icon-box4">
                         <img src="imgs/icon4-1.png">
                         <figcaption>Mobile Game Development</figcaption>
-                        <img class="seta" src="/imgs/seta-box4.png">
+                        <a href="/pages/error.html"><img class="seta" src="/imgs/seta-box4.png"></a>
                     </div>
                     <div class="icon-box4">
                         <img src="imgs/icon4-2.png">
                         <figcaption>PC Game Development</figcaption>
-                        <img class="seta" src="/imgs/seta-box4.png">
+                        <a href="/pages/error.html"><img class="seta" src="/imgs/seta-box4.png"></a>
                     </div>
                     <div class="icon-box4">
                         <img src="imgs/icon4-3.png">
                         <figcaption>PS4 Game Development</figcaption>
-                        <img class="seta" src="/imgs/seta-box4.png">
+                        <a href="/pages/error.html"><img class="seta" src="/imgs/seta-box4.png"></a>
                     </div>
                     <div class="icon-box4">
                         <img src="imgs/icon4-4.png">
                         <figcaption>AR/VR Solutions</figcaption>
-                        <img class="seta" src="/imgs/seta-box4.png">
+                        <a href="/pages/error.html"><img class="seta" src="/imgs/seta-box4.png"></a>
                     </div>
                     <div class="icon-box4">
                         <img src="imgs/icon4-5.png">
                         <figcaption>AR/VR design</figcaption>
-                        <img class="seta" src="/imgs/seta-box4.png">
+                        <a href="/pages/error.html"><img class="seta" src="/imgs/seta-box4.png"></a>
                     </div>
                     <div class="icon-box4">
                         <img src="imgs/icon4-6.png">
                         <figcaption>3D Modelings</figcaption>
-                        <img class="seta" src="/imgs/seta-box4.png">
+                        <a href="/pages/error.html"><img class="seta" src="/imgs/seta-box4.png"></a>
                     </div>
                 </figure>
             </div>
@@ -144,7 +144,8 @@
                     <p>Subscribe to receive the latest news and updates about TDA. We promise not to spam you!</p>
                 </div>
                 <form action="/pages/error.html" id="continue">
-                    <input type="email" id="email" name="email" required="" placeholder="Enter email adress">
+                    <input type="email" id="email" name="email" class="email-loop" placeholder="Enter email adress" oninput="emailLoopValidate()" required>
+                    <span class="validate-span">Insert a valid email</span>
                     <button id="button-continue">Continue</button>
                 </form>
             </div>

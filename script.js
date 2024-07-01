@@ -98,13 +98,13 @@ function messageValidate(){
     
 }
 
-/*function emailLoopValidate(){
+function emailLoopValidate(){
     if(emailRegex.test(emailLoop.value)){
-        
+        emailLoop.setAttribute('style',' border: none');
     }else{
-        fields[4].style.border = '2px solid #e63636';
+        emailLoop.setAttribute('style',' border: 2px solid red');
     }
-}*/
+}
 
 function checkChar(e){
     const char = String.fromCharCode(e.keyCode);
