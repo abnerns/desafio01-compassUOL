@@ -113,3 +113,21 @@ function checkChar(e){
         return true;
     }
 }
+
+function record(){
+    let recordsList = document.getElementById('records-list');
+    recordsList.innerHTML = '';
+
+    let listLocal = JSON.parse(localStorage.getItem('listLocal')) || [];
+
+    listLocal.forEach(item => {
+        let listItem = document.createElement('li');
+        listItem.innerHTML = `
+            <strong>First Name:</strong> ${item.firstName}<br>
+            <strong>Last Name:</strong> ${item.lastName}<br>
+            <strong>Email:</strong> ${item.email}<br>
+            <strong>Message:</strong> ${item.message}<br><br>
+        `;
+        recordsList.appendChild(listItem);
+    });
+}
