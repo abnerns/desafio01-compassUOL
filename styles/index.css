@@ -46,6 +46,10 @@ header{
     transition: transform 0.3s ease;
 }
 
+.menu .contact-button::after {
+    content: none;
+}
+
 .menu a:hover::after{
     transform: scale(1,1);
 }
