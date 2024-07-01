@@ -4,6 +4,7 @@ const fields = document.querySelectorAll(".required");
 const spans = document.querySelectorAll(".validate-span");
 
 const emailLoop = document.querySelector(".email-loop")
+const buttonContinue = document.querySelector("#button-continue");
 
 const validButton = document.querySelector("#register")
 
@@ -98,14 +99,6 @@ function messageValidate(){
     
 }
 
-function emailLoopValidate(){
-    if(emailRegex.test(emailLoop.value)){
-        emailLoop.setAttribute('style',' border: none');
-    }else{
-        emailLoop.setAttribute('style',' border: 2px solid red');
-    }
-}
-
 function checkChar(e){
     const char = String.fromCharCode(e.keyCode);
     const pattern = '[a-zA-Z\\s]';
@@ -131,3 +124,19 @@ function record(){
         recordsList.appendChild(listItem);
     });
 }
+
+function emailLoopValidate(){
+    if(emailRegex.test(emailLoop.value)){
+        emailLoop.setAttribute('style',' border: none');
+        buttonContinue.disabled = false;
+    }else{
+        emailLoop.setAttribute('style',' border: 2px solid red');
+        buttonContinue.disabled = true;
+    }
+}
+
+document.getElementById('continue').addEventListener('submit', function(e) {
+    if (!emailRegex.test(emailLoop.value)) {
+        e.preventDefault();
+    }
+});
