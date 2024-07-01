@@ -8,7 +8,7 @@
 }
 
 
-/* ====== HEADER ====== */
+
 header{
     padding: 2.5rem 3.5rem;
     display: flex;
@@ -73,7 +73,7 @@ nav a{
     text-decoration: none;
 }
 
-/* ====== MAIN ====== */
+
 main{
     display: flex;
     flex-flow: wrap;
@@ -89,7 +89,7 @@ main{
     background: linear-gradient(#2211E7, #383837);
 }
 
-/* BOX 1 */
+
 #fbox1{
     width: 100%;
     height: 100%;
@@ -165,7 +165,7 @@ main{
     transition: .5s;
 }
 
-/* BOX 2 */
+
 #fbox2{
     background: url(/imgs/fundo-fbox2.png);
     background-repeat: no-repeat;
@@ -278,7 +278,7 @@ main{
     margin: 0.5rem 0;
 }
 
-/* BOX 3 */
+
 #fbox3{
     width: 100%;
     height: 100%;
@@ -337,7 +337,7 @@ main{
     transition: .5s;
 }
 
-/* ====== FOOTER ====== */
+
 footer{
     background-color: #070707;
     color: white;

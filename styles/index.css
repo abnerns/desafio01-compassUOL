@@ -8,7 +8,6 @@
     padding: 0;
 }
 
-/* ====== HEADER ====== */
 header{
     padding: 2.5rem 3.5rem;
     display: flex;
@@ -73,7 +72,6 @@ nav a{
     text-decoration: none;
 }
 
-/* ====== MAIN ====== */
 main{
     display: flex;
     flex-flow: wrap;
@@ -89,7 +87,6 @@ main{
     min-height: 100vh;
 }
 
-/* BOX 1 */
 #box1{
     min-width: 100%;
     min-height: 60vh;
@@ -147,7 +144,6 @@ main{
     margin-top: 1.5rem;
 }
 
-/* BOX 2 */
 #box2{
     width: 100%;
     display: flex;
@@ -218,7 +214,6 @@ figcaption{
     height: 1.5rem;
 }
 
-/* BOX 3 */
 #box3{
     width: 100%;
     height: 100%;
@@ -261,7 +256,6 @@ figcaption{
     transition: .9s;
 }
 
-/* BOX 4 */
 #background{
     background-image: url("/imgs/fundo-box4.png");
     width: 100%;
@@ -310,7 +304,6 @@ figcaption{
     cursor: pointer;
 }
 
-/* BOX 5 */
 #box5{
     width: 100%;
     height: 100%;
@@ -342,7 +335,6 @@ figcaption{
     transition: .8s;
 }
 
-/* BOX 6 */
 #box6{
     width: 100%;
     height: 100%;
@@ -409,7 +401,6 @@ figcaption{
 }
 
 
-/* ====== FOOTER ====== */
 footer{
     background-color: #070707;
     color: white;
@@ -498,7 +489,6 @@ ul{
     padding: 1.5rem;
 }
 
-/* ERROR - Page */
 #container-error{
     width: 100%;
     display: flex;
