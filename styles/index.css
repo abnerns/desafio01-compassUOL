@@ -488,8 +488,10 @@ ul{
 #container-error{
     width: 100%;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    padding: 3.5rem;
 }
 
 #error{
@@ -497,6 +499,26 @@ ul{
     height: 100vh;
 }
 
+#form-record h1{
+    padding-bottom: 2rem;
+    font-size: 50px;
+}
+
+#container-error button{
+    background-color: #DC7000;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 2.5rem 0;
+}
+
+#container-error button:hover{
+    background-color: #ad6517;
+    scale: 1.1;
+    transition: .5s;
+}
 
 @media screen and (max-width: 768px) {
     header{
