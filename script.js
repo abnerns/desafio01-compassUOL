@@ -1,74 +1,99 @@
 const form = document.getElementById('formulario');
 const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const fields = document.querySelectorAll(".required");
+const spans = document.querySelectorAll(".validate-span");
 
-const firstName = document.querySelector("#firstName")
-const lastName = document.querySelector("#lastName")
-const email = document.querySelector("#email")
-const message = document.querySelector("#message")
+const emailLoop = document.querySelector(".email-loop")
 
-const firstNameInput = document.querySelector("#firstName")
-const lastNameInput = document.querySelector("#lastName")
-
-const labelFirstName = document.querySelector("#labelFName")
-const labelLastName = document.querySelector("#labelLName")
-const labelEmail = document.querySelector("#labelEmail")
-const labelMessage = document.querySelector("#labelMessage")
-
-const validFirstName = false
-const validLastName = false
-const validEmail = false
-const validMessage = false
 const validButton = document.querySelector("#register")
 
-firstNameInput.addEventListener("keypress", function(e){
-    if(!checkChar(e)){
-        e.preventDefault();
-        labelFirstName.setAttribute('style', 'color: red')
-        labelFirstName.innerHTML = 'First Name  **Numbers and special chars not allowed'
-        validFirstName = false
-    }else{
-        labelFirstName.setAttribute('style', 'color: green')
-        labelFirstName.innerHTML = 'First Name'
-        validFirstName = true
+form.addEventListener('submit', (e) =>{
+    e.preventDefault();
+    const validFirstName = firstNameValidate();
+    const validLastName = lastNameValidate();
+    const validEmail = emailValidate();
+    const validMessage = messageValidate();
+
+    if (validFirstName && validLastName && validEmail && validMessage){
+        form.submit();
     }
 });
 
-lastNameInput.addEventListener("keypress", function(e){
+function validateError(i){
+    spans[i].style.display = 'block';
+}
+
+function validateApproved(i){
+    spans[i].style.display = 'none';
+}
+
+fields[0].addEventListener("keypress", function(e){
     if(!checkChar(e)){
         e.preventDefault();
-        labelLastName.setAttribute('style', 'color: red')
-        labelLastName.innerHTML = 'Last Name  **Numbers and special chars not allowed'
-        validLastName = false
+        validateError(0);
     }else{
-        labelLastName.setAttribute('style', 'color: green')
-        labelLastName.innerHTML = 'Last Name'
-        validLastName = true
+        validateApproved(0);
     }
 });
 
-function emailValidate(){
-    if(emailRegex.test(email.value)){
-        labelEmail.setAttribute('style', 'color: green')
-        labelEmail.innerHTML = 'Email Address'
-        validEmail = true
-    }else{
-        labelEmail.setAttribute('style', 'color: red')
-        labelEmail.innerHTML = 'Email Address **Enter a valid email'
-        validEmail = false
+function firstNameValidate(){
+    if (fields[0].value === "") {
+        validateError(0);
+        return false;
+    } else {
+        validateApproved(0);
+        return true;
     }
 }
 
-message.addEventListener('keyup', () =>{
-    if(message.value.length<=10){
-        labelMessage.setAttribute('style', 'color: red')
-        labelMessage.innerHTML = 'Message  **Enter at least 10 characters'
-        validMessage = false
+fields[1].addEventListener("keypress", function(e){
+    if(!checkChar(e)){
+        e.preventDefault();
+        validateError(1);
     }else{
-        labelMessage.setAttribute('style', 'color: green')
-        labelMessage.innerHTML = 'Message'
-        validMessage = true
+        validateApproved(1);
     }
 });
+
+function lastNameValidate() {
+    if (fields[1].value === "") {
+        validateError(1);
+        return false;
+    } else {
+        validateApproved(1);
+        return true;
+    }
+}
+
+
+function emailValidate(){
+    if(emailRegex.test(fields[2].value)){
+        validateApproved(2);
+        return true;
+    }else{
+        validateError(2);
+        return false;
+    }
+}
+
+function messageValidate(){
+        if(fields[3].value.length<=10){
+            validateError(3);
+            return false;
+        }else{
+            validateApproved(3);
+            return true;
+        }
+    
+}
+
+/*function emailLoopValidate(){
+    if(emailRegex.test(emailLoop.value)){
+        
+    }else{
+        fields[4].style.border = '2px solid #e63636';
+    }
+}*/
 
 function checkChar(e){
     const char = String.fromCharCode(e.keyCode);

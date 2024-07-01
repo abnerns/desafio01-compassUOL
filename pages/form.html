@@ -57,20 +57,24 @@
                 <fieldset class="username">
                     <div>
                         <label for="firstName" id="labelFName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" required>
+                        <input type="text" id="firstName" name="firstName" class="required" oninput="firstNameValidate()">
+                        <span class="validate-span">Numbers and special characters are not allowed</span>
                     </div>
                     <div>
                         <label for="lastName" id="labelLName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" required>
+                        <input type="text" id="lastName" name="lastName" class="required" oninput="lastNameValidate()">
+                        <span class="validate-span">Numbers and special characters are not allowed</span>
                     </div>
                 </fieldset>
                 <div class="email">
                     <label for="email" id="labelEmail">Email Address</label>
-                    <input type="email" id="email" name="email" required oninput="emailValidate()">
+                    <input type="email" id="email" name="email" class="required" oninput="emailValidate()">
+                    <span class="validate-span">Insert a valid email</span>
                 </div>
                 <div class="message">
                     <label for="message" id="labelMessage">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" class="required" oninput="messageValidate()"></textarea>
+                    <span class="validate-span">Message must have at least 10 characters</span>
                 </div>
                 <button type="submit" id="register">Get in touch</button>
             </form>
@@ -87,7 +91,7 @@
                     <p>Subscribe to receive the latest news and updates about TDA. We promise not to spam you!</p>
                 </div>
                 <form action="/pages/error.html" id="continue">
-                    <input type="email" id="email" name="email" required="" placeholder="Enter email adress">
+                    <input type="email" id="email" name="email" class="email-loop" placeholder="Enter email adress" oninput="emailLoopValidate()">
                     <button id="button-continue">Continue</button>
                 </form>
             </div>

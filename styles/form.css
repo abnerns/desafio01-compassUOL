@@ -198,7 +198,6 @@ main{
     display: block;
     color: white;
     background: #4F4F4F;
-    border-color: #CECECE;
     border-radius: 9px;
     padding: 1rem;
 }
@@ -224,7 +223,6 @@ main{
     display: block;
     color: white;
     background: #4F4F4F;
-    border-color: #CECECE;
     border: 0.6%;
     border-radius: 9px;
     padding: 0.5rem;
@@ -250,6 +248,13 @@ main{
     background-color: #b16718;
     scale: 1.10;
     transition: .5s;
+}
+
+.validate-span{
+    font-size: 12px;
+    color: red;
+    display: none;
+    margin: 0.5rem 0;
 }
 
 /* BOX 3 */
