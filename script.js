@@ -15,6 +15,17 @@ form.addEventListener('submit', (e) =>{
     const validMessage = messageValidate();
 
     if (validFirstName && validLastName && validEmail && validMessage){
+        const listLocal = JSON.parse(localStorage.getItem('listLocal') || '[]')
+        listLocal.push({
+            firstName: fields[0].value,
+            lastName: fields[1].value,
+            email: fields[2].value,
+            message: fields[3].value
+        }
+        )
+
+        localStorage.setItem('listLocal', JSON.stringify(listLocal))
+
         form.submit();
     }
 });
@@ -77,7 +88,7 @@ function emailValidate(){
 }
 
 function messageValidate(){
-        if(fields[3].value.length<=10){
+        if(fields[3].value.length<10){
             validateError(3);
             return false;
         }else{
@@ -97,7 +108,7 @@ function messageValidate(){
 
 function checkChar(e){
     const char = String.fromCharCode(e.keyCode);
-    const pattern = '[a-zA-Z]';
+    const pattern = '[a-zA-Z\\s]';
     if(char.match(pattern)){
         return true;
     }
